@@ -1,0 +1,107 @@
+:root {
+  /* =========================
+   * Brand tokens
+   * ========================= */
+  --brand-primary: #EC632B; /* orange */
+  --brand-secondary: #0B2130; /* navy */
+
+  /* RGB tokens (needed for rgba() usage) */
+  --brand-primary-rgb: 236, 99, 43; /* #EC632B */
+  --brand-secondary-rgb: 11, 33, 48; /* #0B2130 */
+
+  /* Accent surfaces & shadows (visible like Hero) */
+  --brand-secondary-accent: #E7EBEE; /* light navy-tinted bg */
+  --brand-secondary-shadow: rgba(var(--brand-secondary-rgb), 0.12);
+
+  /* Map to your existing custom vars */
+  --tblr-primary: var(--brand-primary);
+  --tblr-bg-accent: var(--brand-secondary-accent);
+
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Accent background used in Hero & section bands */
+.bg-accent {
+  background: var(--tblr-bg-accent) !important;
+}
+
+/* Brand text helpers — aligned to Hero usage */
+.text-brand-main {
+  color: var(--brand-secondary) !important;
+}
+
+/* headings, body */
+.text-brand {
+  color: var(--brand-primary) !important;
+}
+
+/* accents, highlights */
+
+.section-spacing {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--brand-secondary);
+  margin-bottom: 2.5rem;
+  letter-spacing: -1.5px;
+}
+
+/* Soft, brand-tinted shadow */
+.shadow-soft {
+  box-shadow: 0 2px 24px 0 rgba(var(--brand-secondary-rgb), 0.06) !important;
+}
+
+.card-modern {
+  border: none !important;
+  border-radius: 1.5rem !important;
+  background: #fff !important;
+}
+
+/* CTA buttons */
+.cta-btn {
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  box-shadow: 0 3px 16px 0 rgba(var(--brand-secondary-rgb), 0.11);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.cta-btn-outline {
+  border-radius: 9999px !important;
+  font-weight: 700 !important;
+  border: 2px solid var(--brand-secondary) !important;
+  color: var(--brand-secondary) !important;
+  background: #fff !important;
+}
+
+.hero-lead {
+  color: rgba(var(--brand-secondary-rgb), 0.82);
+}
+
+@media (min-width: 992px) {
+  .hero-side-img {
+    max-width: 400px;
+  }
+}
+
+/* Align Bootstrap/Tabler primary button to brand primary */
+.btn-primary,
+.btn.btn-primary {
+  background-color: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+}
+
+.btn-primary:hover,
+.btn.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* Optional utility for card tints (e.g., Features) */
+.bg-card-tint {
+  background: var(--brand-secondary-accent) !important;
+  box-shadow: 0 4px 20px var(--brand-secondary-shadow) !important;
+}

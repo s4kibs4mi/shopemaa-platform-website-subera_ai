@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <mask id="sMaskW">
+            <rect width="512" height="512" fill="black"/>
+            <path d="M352 124
+               C 290 124, 270 170, 308 192
+               C 360 221, 352 276, 292 296
+               C 230 316, 224 374, 282 390"
+                  fill="none" stroke="white" stroke-width="92" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="black">
+                <rect x="312" y="118" width="22" height="64" rx="6"/>
+                <rect x="344" y="118" width="22" height="64" rx="6"/>
+                <rect x="376" y="118" width="22" height="64" rx="6"/>
+            </g>
+        </mask>
+    </defs>
+    <rect width="512" height="512" fill="none"/>
+    <g mask="url(#sMaskW)">
+        <rect width="512" height="512" fill="#FFFFFF"/>
+    </g>
+</svg>

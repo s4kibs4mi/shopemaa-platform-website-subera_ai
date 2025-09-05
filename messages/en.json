@@ -1,0 +1,165 @@
+{
+  "tagline": "Scan Smarter. Share Greener.",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "QR Centraal",
+    "subtitle": "All-in-one QR platform for menus, campaigns, digital business cards, file sharing & more.",
+    "cta": "Get Started"
+  },
+  "features": {
+    "title": "Features",
+    "list": [
+      {
+        "title": "AI Page Builder",
+        "desc": "Generate beautiful landing pages or digital menus instantly, powered by AI."
+      },
+      {
+        "title": "Dynamic QR Codes",
+        "desc": "Update, track, and manage your QR assets in real time."
+      },
+      {
+        "title": "Analytics & Insights",
+        "desc": "See engagement, scan trends, and optimize your campaigns."
+      },
+      {
+        "title": "Multi-Use Campaigns",
+        "desc": "Run campaigns, business cards, file sharing, links, and more from one dashboard."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "title": "Create",
+        "desc": "Use AI or templates to make landing pages, menus, business cards, or file links."
+      },
+      {
+        "title": "Share",
+        "desc": "Generate and print QR codes or share them digitally."
+      },
+      {
+        "title": "Engage",
+        "desc": "Visitors scan, interact, purchase, or contact you instantly."
+      },
+      {
+        "title": "Track & Grow",
+        "desc": "See real-time analytics and optimize your campaigns."
+      }
+    ]
+  },
+  "usecases": {
+    "title": "Use Cases",
+    "list": [
+      {
+        "slug": "digital-menu",
+        "name": "Digital Menu",
+        "desc": "Restaurants and cafes can publish and update menus, get instant feedback, and take orders digitally."
+      },
+      {
+        "slug": "smart-business-card",
+        "name": "Smart Business Card",
+        "desc": "Share a dynamic profile with contacts, socials, and documents — always up to date."
+      },
+      {
+        "slug": "event-checkin",
+        "name": "Event Check-In",
+        "desc": "Register and engage attendees for events, workshops, or classes."
+      },
+      {
+        "slug": "file-sharing",
+        "name": "File & Media Sharing",
+        "desc": "Securely share PDFs, videos, and media — unlock via scan or payment."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "Free",
+        "desc": "Best for individuals and quick projects.",
+        "features": [
+          "5 Dynamic QR codes",
+          "Basic analytics",
+          "Basic AI page builder",
+          "Community support"
+        ],
+        "cta": "Start Free"
+      },
+      {
+        "name": "Pro",
+        "price": "€15/mo",
+        "desc": "For small businesses & marketers.",
+        "features": [
+          "50 Dynamic QR codes",
+          "Advanced analytics",
+          "Premium templates",
+          "Remove QR Centraal branding",
+          "Email support"
+        ],
+        "cta": "Contact Sales"
+      },
+      {
+        "name": "Business",
+        "price": "€40/mo",
+        "desc": "For restaurants, agencies, and teams.",
+        "features": [
+          "Unlimited QR codes",
+          "Team members",
+          "Full analytics",
+          "Custom domain",
+          "Priority support"
+        ],
+        "cta": "Contact Sales"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "list": [
+      {
+        "name": "Sofia Rahman",
+        "title": "Owner, Cafe Blossom",
+        "feedback": "With QR Centraal, our menu updates are instant and our customers love the digital experience. Analytics help us understand peak times and preferences."
+      },
+      {
+        "name": "Tariq Ahmed",
+        "title": "Digital Marketer",
+        "feedback": "I use QR Centraal for campaign links and business cards. Super easy, modern, and the data is gold for my clients."
+      },
+      {
+        "name": "Emilie Dubois",
+        "title": "Event Organizer",
+        "feedback": "QR check-ins and ticketing with QR Centraal made our event smoother and safer than ever."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Grow?",
+    "desc": "Start for free, or contact us to discuss how QR Centraal can transform your digital engagement. Your first QR is just a scan away.",
+    "contact": "Contact Us",
+    "pricing": "See Pricing"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+  "about": {
+    "title": "About QR Centraal",
+    "content": "QR Centraal was built to empower businesses and creators with smarter, greener, more dynamic ways to connect and share. From restaurants digitizing menus to marketers tracking campaigns, we believe QR technology should be flexible, powerful, and easy for everyone. Scan Smarter. Share Greener."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+  "notfound": "Page not found."
+}

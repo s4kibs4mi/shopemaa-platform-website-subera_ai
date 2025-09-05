@@ -1,0 +1,74 @@
+.nav-link {
+  color: var(--brand-secondary);
+  font-size: 1rem;
+  line-height: 1.28;
+  transition: color .18s ease;
+}
+
+.nav-link:focus-visible,
+.nav-link:hover {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.hamburger-icon {
+  font-size: 30px;
+  color: var(--brand-secondary);
+}
+
+.navbar-mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  /* secondary with 0.82 opacity */
+  background: rgba(var(--brand-secondary-rgb), 0.82);
+  z-index: 2000;
+  transition: opacity .24s;
+
+  nav {
+    width: 320px;
+    max-width: 95vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+    /* subtle shadow using secondary */
+    box-shadow: 0 6px 32px 0 rgba(var(--brand-secondary-rgb), .22);
+    display: flex;
+    flex-direction: column;
+    background: #fff; // ensure the panel itself stays white
+    will-change: transform;
+  }
+}
+
+/* --- Minimal CSS for mobile drawer --- */
+.navbar-mobile-drawer {
+  transition: opacity .23s;
+}
+
+.navbar-mobile-drawer:not(.open) nav {
+  transform: translateX(100%);
+  transition: transform .23s ease;
+}
+
+.navbar-mobile-drawer.open nav {
+  transform: translateX(0%);
+  transition: transform .23s ease;
+}
+
+.navbar-wrapper {
+  @media (max-width: 991px) {
+    .d-lg-none {
+      display: inline-block !important;
+    }
+
+    .d-lg-inline-block,
+    .d-lg-flex {
+      display: none !important;
+    }
+  }
+}
