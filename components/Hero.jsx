@@ -1,4 +1,4 @@
-import {getSpoonSyncAppLink} from "../helpers/link-helper";
+import {getSuberaAppLink} from "../helpers/link-helper";
 
 export default function Hero() {
     return (
@@ -7,33 +7,35 @@ export default function Hero() {
                 <div className="flex-fill text-center text-lg-start">
                     <h1
                         className="display-2 fw-bolder text-brand-main mb-3"
-                        style={{letterSpacing: "-2px"}}>
-                        Your Restaurant,<br/>Just Smarter.
+                        style={{letterSpacing: "-2px"}}
+                    >
+                        Commerce,<br/> Smarter with AI.
                     </h1>
 
                     <p className="fs-2 hero-lead mb-5" style={{maxWidth: 540}}>
-                        <span className="fw-semibold text-secondary">
-                          Manage QR menus, take orders, track tables, and coordinate staff, all in one platform.
-                        </span>
+            <span className="fw-semibold text-secondary">
+              Subera AI drives upsell, cross-sell, and complete-the-package
+              recommendations in real time.
+            </span>
                         <br/>
                         <span className="text-secondary" style={{fontWeight: 500}}>
-                          Crafting the Next Era of Dining.
-                        </span>
+              Boost AOV, CTR, and customer lifetime value with precision AI.
+            </span>
                     </p>
 
                     <div
                         className="d-flex flex-column flex-md-row gap-4 justify-content-center justify-content-lg-start">
                         <a
-                            href={getSpoonSyncAppLink()}
+                            href={getSuberaAppLink()}
                             className="btn btn-primary btn-lg cta-btn px-5 py-3"
-                            aria-label="Get started with SpoonSync"
+                            aria-label="Get started with Subera AI"
                         >
-                            Get Started Free
+                            Start Free
                         </a>
                         <a
                             href="/contact"
                             className="btn btn-outline-primary btn-lg cta-btn-outline px-5 py-3"
-                            aria-label="Contact SpoonSync sales"
+                            aria-label="Contact Subera AI sales"
                         >
                             Contact Sales
                         </a>
@@ -42,8 +44,8 @@ export default function Hero() {
 
                 <div className="flex-fill d-flex justify-content-center mt-5 mt-lg-0">
                     <img
-                        src="/spoonsync/mockup.png"
-                        alt="SpoonSync preview"
+                        src="/subera/mockup.png"
+                        alt="Subera AI dashboard preview"
                         className="hero-side-img rounded-4 shadow-soft"
                         loading="eager"
                         decoding="async"

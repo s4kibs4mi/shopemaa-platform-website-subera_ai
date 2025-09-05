@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function BlogListPage({blogPosts}) {
+export default function BlogListPage({blogPosts = []}) {
     return (
         <main className="bg-white">
             {/* HERO */}
@@ -18,12 +18,13 @@ export default function BlogListPage({blogPosts}) {
           >
             Blog
           </span>
-                    <h1 className="display-4 fw-bold mb-3 text-brand-main">
-                        SpoonSync Insights
-                    </h1>
-                    <p className="lead mb-0 mx-auto"
-                       style={{maxWidth: 560, color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                        Tips, stories, and guides on QR menus, orders, tables, staff, and data‑driven hospitality.
+                    <h1 className="display-4 fw-bold mb-3 text-brand-main">Subera AI Insights</h1>
+                    <p
+                        className="lead mb-0 mx-auto"
+                        style={{maxWidth: 560, color: "rgba(var(--brand-secondary-rgb), .9)"}}
+                    >
+                        Playbooks, benchmarks, and hands-on guides for AI-powered commerce:
+                        upsell, cross-sell, complete-the-package, analytics, and growth.
                     </p>
                 </div>
             </section>
@@ -41,14 +42,16 @@ export default function BlogListPage({blogPosts}) {
                                     {post.image && (
                                         <img
                                             src={post.image}
-                                            alt={post.title}
+                                            alt={post.title || "Blog post image"}
                                             style={{width: "100%", objectFit: "cover"}}
+                                            loading="lazy"
+                                            decoding="async"
                                         />
                                     )}
 
                                     <div className="card-body d-flex flex-column">
                                         <div className="mb-2">
-                                            {post.tags &&
+                                            {Array.isArray(post.tags) &&
                                                 post.tags.map((tag) => (
                                                     <span
                                                         key={tag}
@@ -76,11 +79,13 @@ export default function BlogListPage({blogPosts}) {
                                             className="mt-auto small d-flex justify-content-between align-items-center text-muted">
                       <span>
                         {post.author} &middot;{" "}
-                          {new Date(post.date).toLocaleDateString(undefined, {
-                              month: "short",
-                              day: "numeric",
-                              year: "numeric",
-                          })}
+                          {post.date
+                              ? new Date(post.date).toLocaleDateString(undefined, {
+                                  month: "short",
+                                  day: "numeric",
+                                  year: "numeric",
+                              })
+                              : ""}
                       </span>
                                             <span style={{
                                                 color: "var(--brand-primary)",

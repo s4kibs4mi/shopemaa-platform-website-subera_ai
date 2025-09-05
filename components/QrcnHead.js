@@ -1,24 +1,19 @@
 import React from 'react'
 import Head from 'next/head';
-import {getQrCentraalLink} from "../helpers/link-helper";
-import {getMetaDescription, getQrCentraalLabel, getSlogan} from "../helpers/text-helper";
+import {getSuberaLink} from "../helpers/link-helper";
+import {getMetaDescription, getSuberaLabel, getSlogan} from "../helpers/text-helper";
 
 const QrcnHead = ({
-                      title = getQrCentraalLabel() + ' | ' + getSlogan(),
+                      title = getSuberaLabel() + ' | ' + getSlogan(),
                       description = getMetaDescription(),
-                      bannerImage = '/img/qrcentraal-default_banner.png',
-                      faviconUrl = '/qrc/qrc-favicon.png',
-                      contentUrl = getQrCentraalLink()
+                      bannerImage = '/subera/subera-default_banner.png',
+                      faviconUrl = '/subera/subera-favicon.png',
+                      contentUrl = getSuberaLink()
                   }) => {
     return (
         <Head>
-            {contentUrl && (
-                <link rel="canonical" href={contentUrl}/>
-            )}
-
-            {faviconUrl && (
-                <link rel="shortcut icon" href={faviconUrl}/>
-            )}
+            {contentUrl && <link rel="canonical" href={contentUrl}/>}
+            {faviconUrl && <link rel="shortcut icon" href={faviconUrl}/>}
 
             {title && (
                 <>
@@ -30,11 +25,9 @@ const QrcnHead = ({
 
             {description && (
                 <>
-                    <meta name="og:description"
-                          content={description}/>
+                    <meta name="og:description" content={description}/>
                     <meta name="twitter:description" content={description}/>
-                    <meta name="description"
-                          content={description}/>
+                    <meta name="description" content={description}/>
                 </>
             )}
 
@@ -45,11 +38,7 @@ const QrcnHead = ({
                 </>
             )}
 
-            {contentUrl && (
-                <>
-                    <meta property="og:url" content={contentUrl}/>
-                </>
-            )}
+            {contentUrl && <meta property="og:url" content={contentUrl}/>}
 
             <meta property="og:type" content="website"/>
         </Head>

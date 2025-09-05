@@ -8,23 +8,28 @@ export default function Footer() {
                     {/* Brand column */}
                     <div className="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-start">
                         <div className="d-flex align-items-center mb-3">
-                            <img src="/spoonsync/logo-mark.svg" alt="SpoonSync" width={40} height={40}
-                                 className="me-2"/>
-                            <span className="fw-bold fs-3 text-white">SpoonSync</span>
+                            <img src="/subera/logo-mark.svg" alt="Subera AI" width={40} height={40} className="me-2"/>
+                            <span className="fw-bold fs-3 text-white">Subera AI</span>
                         </div>
                         <div className="text-white mb-3 fs-5" style={{opacity: 0.93}}>
-                            Your Restaurant, Just Smarter.<br/>
-                            <span className="fw-semibold">Crafting the Next Era of Dining.</span>
+                            Smarter recommendations. Bigger baskets.
+                            <br/>
+                            <span className="fw-semibold">Upsell, cross-sell, and bundling—powered by AI.</span>
                         </div>
                         <div className="d-flex gap-3 mt-3">
-                            <a href="#" className="text-white social-link" aria-label="Facebook"><IconBrandFacebook
-                                size={28}/></a>
-                            <a href="#" className="text-white social-link" aria-label="Twitter"><IconBrandTwitter
-                                size={28}/></a>
-                            <a href="#" className="text-white social-link" aria-label="LinkedIn"><IconBrandLinkedin
-                                size={28}/></a>
-                            <a href="mailto:hello@spoonsync.com" className="text-white social-link"
-                               aria-label="Email"><IconMail size={28}/></a>
+                            <a href="https://facebook.com" className="text-white social-link" aria-label="Facebook">
+                                <IconBrandFacebook size={28}/>
+                            </a>
+                            <a href="https://twitter.com" className="text-white social-link" aria-label="Twitter / X">
+                                <IconBrandTwitter size={28}/>
+                            </a>
+                            <a href="https://www.linkedin.com/company/subera-ai" className="text-white social-link"
+                               aria-label="LinkedIn">
+                                <IconBrandLinkedin size={28}/>
+                            </a>
+                            <a href="mailto:hello@subera.ai" className="text-white social-link" aria-label="Email">
+                                <IconMail size={28}/>
+                            </a>
                         </div>
                     </div>
 
@@ -40,7 +45,7 @@ export default function Footer() {
                             <li><a href="/about" className="footer-link">About</a></li>
                             <li><a href="/careers" className="footer-link">Careers</a></li>
                             <li><a href="/pricing" className="footer-link">Pricing</a></li>
-                            <li><a href="/blogs" className="footer-link">Blog</a></li>
+                            <li><a href="/blog" className="footer-link">Blog</a></li>
                         </ul>
                     </div>
 
@@ -53,25 +58,28 @@ export default function Footer() {
                             Product
                         </div>
                         <ul className="list-unstyled fs-6">
-                            <li><a href="/usecases/digital-menu" className="footer-link">QR Menus & Ordering</a></li>
-                            <li><a href="/usecases/tables" className="footer-link">Tables & Floorplan</a></li>
-                            <li><a href="/usecases/staff-roles" className="footer-link">Staff & Roles</a></li>
-                            <li><a href="/usecases/analytics" className="footer-link">Reports & Insights</a></li>
+                            <li><a href="/features/ai-commerce" className="footer-link">AI Commerce</a></li>
+                            <li><a href="/features/upsell-cross-sell" className="footer-link">Upsell & Cross-sell</a>
+                            </li>
+                            <li><a href="/features/complete-package" className="footer-link">Complete-the-Package</a>
+                            </li>
+                            <li><a href="/features/analytics" className="footer-link">Analytics & ROI</a></li>
                         </ul>
                     </div>
 
-                    {/* Support */}
+                    {/* Solutions */}
                     <div className="col-6 col-md-2 d-flex flex-column align-items-start">
                         <div
                             className="fw-bold mb-2 text-uppercase"
                             style={{color: "#fff", opacity: 0.97, fontSize: "1.14rem", letterSpacing: ".07em"}}
                         >
-                            Support
+                            Solutions
                         </div>
                         <ul className="list-unstyled fs-6">
-                            <li><a href="/docs" className="footer-link">Documentation</a></li>
-                            <li><a href="/faq" className="footer-link">FAQ</a></li>
-                            <li><a href="/contact" className="footer-link">Contact Support</a></li>
+                            <li><a href="/solutions/retail" className="footer-link">For Retail</a></li>
+                            <li><a href="/solutions/restaurants" className="footer-link">For Restaurants</a></li>
+                            <li><a href="/solutions/grocery" className="footer-link">For Grocery</a></li>
+                            <li><a href="/solutions/digital" className="footer-link">For Digital</a></li>
                         </ul>
                     </div>
 
@@ -87,13 +95,15 @@ export default function Footer() {
                             <li><a href="/terms" className="footer-link">Terms</a></li>
                             <li><a href="/privacy" className="footer-link">Privacy</a></li>
                             <li><a href="/cookie" className="footer-link">Cookie Policy</a></li>
+                            {/* Optional: DPA / Security */}
+                            <li><a href="/security" className="footer-link">Security</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="text-center mt-4">
                     <div className="text-white-50 small">
-                        &copy; {new Date().getFullYear()} SpoonSync. All rights reserved.
+                        &copy; {new Date().getFullYear()} Subera AI. All rights reserved.
                     </div>
                 </div>
             </div>
@@ -113,7 +123,7 @@ export default function Footer() {
 
                 .footer-link:hover,
                 .footer-link:focus {
-                    color: var(--brand-primary) !important; /* orange highlight */
+                    color: var(--brand-primary) !important; /* amber highlight */
                     opacity: 1;
                     text-decoration: underline;
                     text-decoration-color: var(--brand-primary);
@@ -126,7 +136,7 @@ export default function Footer() {
 
                 .social-link:hover,
                 .social-link:focus {
-                    color: var(--brand-primary) !important; /* orange highlight */
+                    color: var(--brand-primary) !important; /* amber highlight */
                     opacity: 1;
                 }
             `}</style>

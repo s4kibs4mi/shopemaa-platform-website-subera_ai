@@ -1,11 +1,15 @@
 export function getSlogan() {
-    return 'Turn every scan into growth'
+    return 'Smarter recommendations. Bigger baskets.'
 }
 
-export function getQrCentraalLabel() {
-    return 'QrCentraal'
+export function getSuberaLabel() {
+    return 'Subera AI'
 }
 
 export function getMetaDescription() {
-    return 'Create branded QR codes for menus, campaigns, business cards, and more. Turn every scan into growth with QR Centraal’s all-in-one platform.'
+    return 'Subera AI is the commerce recommendation engine that boosts sales with intelligent upsell, cross-sell, and complete-the-package suggestions. Drive higher AOV, CTR, and revenue with real-time AI precision.'
+}
+
+export function getSuberaLink() {
+    return 'https://subera.ai'
 }

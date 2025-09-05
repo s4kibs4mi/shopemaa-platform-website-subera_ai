@@ -1,32 +1,37 @@
-import {IconQrcode, IconDeviceMobile, IconFileText, IconChartBar} from "@tabler/icons-react";
+import {
+    IconShoppingCart,
+    IconToolsKitchen2,
+    IconBasket,
+    IconDeviceLaptop
+} from "@tabler/icons-react";
 
 const cases = [
     {
-        icon: <IconQrcode size={32} className="text-brand"/>,
-        title: "Digital Menus & Ordering",
-        desc: "QR menus with real-time updates, modifiers, and instant orders.",
-        href: "/usecases/qr-menus",
+        icon: <IconShoppingCart size={32} className="text-brand"/>,
+        title: "For Retail",
+        desc: "Boost attach rate with accessories and complementary product recommendations.",
+        href: "/solutions/retail",
         color: "#ffffff"
     },
     {
-        icon: <IconDeviceMobile size={32} className="text-brand"/>,
-        title: "Tables & Floorplan",
-        desc: "Track table status, assign orders, and speed up turnover.",
-        href: "/usecases/tables-floorplan",
+        icon: <IconToolsKitchen2 size={32} className="text-brand"/>,
+        title: "For Restaurants",
+        desc: "Increase check size with meal combos, sides, and allergen-aware upsells.",
+        href: "/solutions/restaurants",
         color: "#ffffff"
     },
     {
-        icon: <IconFileText size={32} className="text-brand"/>,
-        title: "Staff & Roles",
-        desc: "Granular permissions for admin, waitstaff, and kitchen teams.",
-        href: "/usecases/staff-roles",
+        icon: <IconBasket size={32} className="text-brand"/>,
+        title: "For Grocery",
+        desc: "Encourage larger baskets with recipe bundles and smart restock suggestions.",
+        href: "/solutions/grocery",
         color: "#ffffff"
     },
     {
-        icon: <IconChartBar size={32} className="text-brand"/>,
-        title: "Reports & Insights",
-        desc: "Sales, item performance, and peak hours—know what drives revenue.",
-        href: "/usecases/analytics",
+        icon: <IconDeviceLaptop size={32} className="text-brand"/>,
+        title: "For Digital Products",
+        desc: "Drive more value with ebook + audio bundles, software add-ons, and upgrade paths.",
+        href: "/solutions/digital",
         color: "#ffffff"
     }
 ];
@@ -73,7 +78,10 @@ export default function UseCases() {
                                 </div>
 
                                 <div className="ms-4 flex-grow-1">
-                                    <div className="fw-bold fs-3 text-brand-main mb-1" style={{letterSpacing: "-.5px"}}>
+                                    <div
+                                        className="fw-bold fs-3 text-brand-main mb-1"
+                                        style={{letterSpacing: "-.5px"}}
+                                    >
                                         {u.title}
                                     </div>
                                     <div className="fs-5" style={{color: "rgba(var(--brand-secondary-rgb), 0.9)"}}>

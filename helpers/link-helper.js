@@ -1,11 +1,13 @@
-export function getQrCentraalLink() {
-    return 'https://qrcentraal.com'
+export function getSuberaLink() {
+    return 'https://subera.ai'
 }
 
-export function getQrCentraalAppLink() {
-    return 'https://stage-app.qrcentraal.com'
+export function getSuberaAppLink() {
+    // adjust domain when your staging/prod app is set
+    return 'https://app.subera.ai'
 }
 
-export function getSpoonSyncAppLink() {
-    return 'https://stage-app.qrcentraal.com'
+export function getSuberaDocsLink() {
+    // optional, if you want a docs/partner portal link
+    return 'https://docs.subera.ai'
 }

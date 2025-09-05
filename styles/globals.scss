@@ -1,16 +1,18 @@
 :root {
   /* =========================
-   * Brand tokens
+   * Subera AI — Brand tokens
    * ========================= */
-  --brand-primary: #EC632B; /* orange */
-  --brand-secondary: #0B2130; /* navy */
+  /* Primary CTA (buttons/links) → Amber */
+  --brand-primary: #FFB74D; /* Amber */
+  --brand-primary-rgb: 255, 183, 77;
 
-  /* RGB tokens (needed for rgba() usage) */
-  --brand-primary-rgb: 236, 99, 43; /* #EC632B */
-  --brand-secondary-rgb: 11, 33, 48; /* #0B2130 */
+  /* Core brand text / headings / overlay → Deep Maroon */
+  --brand-secondary: #5C1D10; /* Deep Maroon */
+  --brand-secondary-rgb: 92, 29, 16;
 
-  /* Accent surfaces & shadows (visible like Hero) */
-  --brand-secondary-accent: #E7EBEE; /* light navy-tinted bg */
+  /* Accent surfaces & shadows */
+  /* Soft maroon-tinted background for hero bands, cards, etc. */
+  --brand-secondary-accent: #F5ECE9; /* light maroon tint */
   --brand-secondary-shadow: rgba(var(--brand-secondary-rgb), 0.12);
 
   /* Map to your existing custom vars */
@@ -27,16 +29,15 @@
 
 /* Brand text helpers — aligned to Hero usage */
 .text-brand-main {
-  color: var(--brand-secondary) !important;
+  color: var(--brand-secondary) !important; /* Deep Maroon */
 }
 
-/* headings, body */
+/* Secondary highlight text (use sparingly) */
 .text-brand {
-  color: var(--brand-primary) !important;
+  color: var(--brand-primary) !important; /* Amber */
 }
 
-/* accents, highlights */
-
+/* Section spacing */
 .section-spacing {
   padding-top: 4.5rem !important;
   padding-bottom: 4.5rem !important;
@@ -52,7 +53,7 @@
 
 /* Soft, brand-tinted shadow */
 .shadow-soft {
-  box-shadow: 0 2px 24px 0 rgba(var(--brand-secondary-rgb), 0.06) !important;
+  box-shadow: 0 2px 24px 0 var(--brand-secondary-shadow) !important;
 }
 
 .card-modern {
@@ -61,11 +62,24 @@
   background: #fff !important;
 }
 
-/* CTA buttons */
+/* CTA buttons (primary = Amber) */
+.btn-primary,
+.btn.btn-primary {
+  background-color: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: #121212 !important; /* readable on amber */
+}
+
+.btn-primary:hover,
+.btn.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* Outline CTA that matches Subera’s maroon */
 .cta-btn {
   border-radius: 9999px !important;
   font-weight: 700 !important;
-  box-shadow: 0 3px 16px 0 rgba(var(--brand-secondary-rgb), 0.11);
+  box-shadow: 0 3px 16px 0 var(--brand-secondary-shadow);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -78,6 +92,7 @@
   background: #fff !important;
 }
 
+/* General content helpers */
 .hero-lead {
   color: rgba(var(--brand-secondary-rgb), 0.82);
 }
@@ -86,18 +101,6 @@
   .hero-side-img {
     max-width: 400px;
   }
-}
-
-/* Align Bootstrap/Tabler primary button to brand primary */
-.btn-primary,
-.btn.btn-primary {
-  background-color: var(--brand-primary) !important;
-  border-color: var(--brand-primary) !important;
-}
-
-.btn-primary:hover,
-.btn.btn-primary:hover {
-  filter: brightness(0.95);
 }
 
 /* Optional utility for card tints (e.g., Features) */

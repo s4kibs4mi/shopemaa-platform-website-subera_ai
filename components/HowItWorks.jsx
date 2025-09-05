@@ -1,25 +1,25 @@
-import {IconDeviceMobile, IconQrcode, IconChartBar, IconBolt} from "@tabler/icons-react";
+import {IconBolt, IconChartBar, IconCloudDataConnection, IconShoppingCart} from "@tabler/icons-react";
 
 const steps = [
     {
-        icon: <IconDeviceMobile size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
-        title: "Set Up",
-        desc: "Add your menu, tables, and staff roles in minutes."
+        icon: <IconCloudDataConnection size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
+        title: "Connect",
+        desc: "Integrate with Shopify, Stripe, or your stack in minutes."
     },
     {
-        icon: <IconQrcode size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
-        title: "Go Live",
-        desc: "Display QR menus or take orders directly from customers."
-    },
-    {
-        icon: <IconChartBar size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
-        title: "Manage",
-        desc: "Track orders, tables, and staff performance in real time."
+        icon: <IconShoppingCart size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
+        title: "Enable",
+        desc: "Turn on upsell, cross-sell, and package recommendations instantly."
     },
     {
         icon: <IconBolt size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
+        title: "Recommend",
+        desc: "AI delivers real-time suggestions at product and checkout pages."
+    },
+    {
+        icon: <IconChartBar size={36} style={{color: "var(--brand-primary)"}} className="mb-2"/>,
         title: "Grow",
-        desc: "Use reports and insights to optimize and increase revenue."
+        desc: "Track AOV, CTR uplift, and revenue impact in your dashboard."
     }
 ];
 

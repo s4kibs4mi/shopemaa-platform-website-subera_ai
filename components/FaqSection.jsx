@@ -1,26 +1,38 @@
 import {useState} from "react";
 
-// FAQ content (SpoonSync)
+// FAQ content (Subera AI)
 const faqs = [
     {
-        q: "What does SpoonSync do?",
-        a: "SpoonSync streamlines restaurant operations—QR menus, ordering & KDS, tables, staff roles, and analytics—in one platform."
+        q: "What does Subera AI do?",
+        a: "Subera AI is a commerce recommendation engine. It delivers real-time upsell, cross-sell, complete-the-package, and bought-together suggestions to increase AOV, CTR, and revenue."
     },
     {
-        q: "Who is SpoonSync for?",
-        a: "Single venues, cafes, multi-branch restaurants, and hospitality groups that want faster service, fewer errors, and better insights."
+        q: "Who is Subera AI for?",
+        a: "Merchants and commerce teams across Retail, Restaurants, Grocery, and Digital goods who want measurable growth with low-latency AI recommendations."
     },
     {
-        q: "How secure is my data on SpoonSync?",
-        a: "Security and privacy are top priorities. We use encryption in transit and at rest, role-based access, and industry best practices."
+        q: "How does Subera integrate with my stack?",
+        a: "Install our Shopify app, enhance Stripe Checkout, or use our headless SDK/API for Jamstack and custom storefronts. We also support webhooks for events and server-side integrations."
     },
     {
-        q: "Can SpoonSync integrate with my existing tools?",
-        a: "Yes. We support POS, payment gateways, webhooks, and a developer-friendly API. Custom integrations are available for teams."
+        q: "How accurate and fast are the recommendations?",
+        a: "Recommendations are tuned per vertical and optimized for speed, targeting sub-200ms P95 latency. Models blend embeddings, co-occurrence, and business rules (inventory, margin, allergens)."
+    },
+    {
+        q: "How does Subera handle data privacy and security?",
+        a: "Data is tenant-isolated. We use encryption in transit and at rest, role-based access, and follow industry best practices. You control what product, order, and customer fields are shared."
+    },
+    {
+        q: "What analytics do I get?",
+        a: "CTR on rec slots, AOV uplift vs baseline, revenue attribution by placement, and experiment reporting (A/B). Dashboards highlight impact and drill-downs by flow and vertical."
     },
     {
         q: "How does billing work?",
-        a: "Start free and upgrade anytime. Manage your plan from the dashboard. Major payment methods are accepted; cancel anytime."
+        a: "Start free and upgrade as you grow. Plans are usage-based (recommendation calls/month) with monthly billing. Cancel anytime. Enterprise plans include SLAs and dedicated support."
+    },
+    {
+        q: "Can I add business rules?",
+        a: "Yes. You can enforce constraints like inventory thresholds, margin targets, price windows, allergen exclusions, or brand/compatibility filters—without retraining models."
     }
 ];
 

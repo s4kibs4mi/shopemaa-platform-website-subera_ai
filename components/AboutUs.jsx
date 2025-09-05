@@ -14,17 +14,20 @@ export default function AboutUs() {
                 <div className="container-xl text-center">
           <span
               className="badge rounded-pill mb-2"
-              style={{background: "var(--brand-secondary)", color: "#fff", fontSize: "1rem"}}
+              style={{ background: "var(--brand-secondary)", color: "#fff", fontSize: "1rem" }}
           >
             About Us
           </span>
                     <h1 className="display-4 fw-bold mb-3 text-brand-main">
-                        Your Restaurant, Just Smarter.
+                        Smarter Recommendations. Bigger Baskets.
                     </h1>
-                    <p className="lead mb-0 mx-auto"
-                       style={{maxWidth: 580, color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                        SpoonSync streamlines restaurant operations with QR menus, ordering & KDS, tables, staff roles,
-                        and insights—so teams run smoother and guests get exceptional service.
+                    <p
+                        className="lead mb-0 mx-auto"
+                        style={{ maxWidth: 580, color: "rgba(var(--brand-secondary-rgb), .9)" }}
+                    >
+                        Subera AI is the commerce engine for upsell, cross-sell, complete-the-package,
+                        and bought-together. Real-time intelligence that lifts AOV, CTR, and revenue—without
+                        heavy integration work.
                     </p>
                 </div>
             </section>
@@ -35,26 +38,24 @@ export default function AboutUs() {
                     <div className="col-12 col-md-6">
                         <div className="bg-white rounded-4 p-5 shadow-soft">
                             <h2 className="h4 fw-bold mb-3 text-brand-main">Our Story</h2>
-                            <p className="mb-4" style={{color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                                We started SpoonSync to help restaurants replace fragmented tools with one
-                                platform—faster,
-                                smarter, and more sustainable. From independent cafes to multi‑branch groups, we bring
-                                menus,
-                                orders, tables, and staff together in a single, elegant workflow.
+                            <p className="mb-4" style={{ color: "rgba(var(--brand-secondary-rgb), .9)" }}>
+                                We started Subera to help merchants go beyond static “related items.” Shoppers expect
+                                context-aware suggestions—so we built an engine that delivers the right upsell, cross-sell,
+                                and bundles in under 200ms, tuned for each vertical.
                             </p>
-                            <p style={{color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                                Built by a distributed team with roots in Bangladesh and Europe, we’re focused on
-                                practical
-                                innovation that teams can adopt in minutes and trust every day of service.
+                            <p style={{ color: "rgba(var(--brand-secondary-rgb), .9)" }}>
+                                From independent retailers to multi-brand commerce teams, we focus on measurable outcomes:
+                                higher AOV, better attach rate, and happier customers. Built by a distributed team across
+                                Europe and Asia, we ship practical AI that teams can integrate in minutes and trust every day.
                             </p>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 text-center">
                         <img
-                            src="/assets/about-team-collab.png"
-                            alt="SpoonSync team collaboration"
+                            src="/subera/about-team-collab.png"
+                            alt="Subera AI team collaboration"
                             className="rounded-4 shadow-soft"
-                            style={{width: "min(350px, 85vw)", background: "#fff"}}
+                            style={{ width: "min(350px, 85vw)", background: "#fff" }}
                         />
                     </div>
                 </div>
@@ -65,31 +66,34 @@ export default function AboutUs() {
                 <div className="row gy-5 text-center">
                     <div className="col-12 col-md-4">
                         <div className="rounded-4 p-4 shadow-soft bg-white h-100">
-                            <div className="mb-2" style={{fontSize: 38}}><span className="text-brand">🌱</span></div>
-                            <div className="fw-bold mb-2 text-brand-main">Sustainability</div>
+                            <div className="mb-2" style={{ fontSize: 38 }}>
+                                <span className="text-brand">🎯</span>
+                            </div>
+                            <div className="fw-bold mb-2 text-brand-main">Outcome-Driven</div>
                             <div className="text-muted">
-                                Digital menus and workflows reduce paper waste and reprints—good for your budget and the
-                                planet.
+                                We highlight impact—AOV, CTR uplift, revenue attribution—so you can see exactly what AI contributes.
                             </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
                         <div className="rounded-4 p-4 shadow-soft bg-white h-100">
-                            <div className="mb-2" style={{fontSize: 38}}><span className="text-brand">⚡️</span></div>
-                            <div className="fw-bold mb-2 text-brand-main">Innovation</div>
+                            <div className="mb-2" style={{ fontSize: 38 }}>
+                                <span className="text-brand">⚡️</span>
+                            </div>
+                            <div className="fw-bold mb-2 text-brand-main">Real-Time Precision</div>
                             <div className="text-muted">
-                                A modern stack with AI‑assisted setup, KDS, and real‑time insights—built for busy
-                                service.
+                                Low-latency (<span className="fw-semibold">P95 &lt; 200ms</span>) and context aware—inventory, margin, allergens, and more.
                             </div>
                         </div>
                     </div>
                     <div className="col-12 col-md-4">
                         <div className="rounded-4 p-4 shadow-soft bg-white h-100">
-                            <div className="mb-2" style={{fontSize: 38}}><span className="text-brand">🤝</span></div>
-                            <div className="fw-bold mb-2 text-brand-main">People First</div>
+                            <div className="mb-2" style={{ fontSize: 38 }}>
+                                <span className="text-brand">🤝</span>
+                            </div>
+                            <div className="fw-bold mb-2 text-brand-main">Merchant-First</div>
                             <div className="text-muted">
-                                We put teams and guests at the center—reliable tools, clear roles, and service that
-                                scales.
+                                Simple SDKs, clear controls, and business rules you can adjust without retraining models.
                             </div>
                         </div>
                     </div>
@@ -101,31 +105,34 @@ export default function AboutUs() {
                 <div className="row gy-5 align-items-center">
                     <div className="col-12 col-md-7">
                         <h2 className="h4 fw-bold mb-3 text-brand-main">Our Team</h2>
-                        <p style={{color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                            We’re a distributed, multicultural team working across Bangladesh, Europe, and beyond—united
-                            by a
-                            love for great product and measurable customer impact.
-                            <br/><br/>
-                            Want to join us? We’re always looking for smart, curious people to help build the future of
-                            restaurant operations.
+                        <p style={{ color: "rgba(var(--brand-secondary-rgb), .9)" }}>
+                            We’re a distributed, multicultural team building AI for commerce with a clear promise:
+                            smarter recommendations, bigger baskets. If you care about performance, design, and
+                            merchant outcomes, you’ll fit right in.
+                            <br />
+                            <br />
+                            We’re especially excited to meet folks with backgrounds in recommender systems,
+                            data engineering, and developer experience.
                         </p>
                         <div className="d-flex gap-3 mt-3">
-                            <Link href="/careers" className="btn btn-primary fw-bold px-4 py-2 cta-btn"
-                                  style={{borderRadius: 28}}>
+                            <Link href="/careers" className="btn btn-primary fw-bold px-4 py-2 cta-btn" style={{ borderRadius: 28 }}>
                                 View Careers
                             </Link>
-                            <Link href="/contact" className="btn btn-outline-primary fw-bold px-4 py-2 cta-btn-outline"
-                                  style={{borderRadius: 28}}>
+                            <Link
+                                href="/contact"
+                                className="btn btn-outline-primary fw-bold px-4 py-2 cta-btn-outline"
+                                style={{ borderRadius: 28 }}
+                            >
                                 Contact Us
                             </Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-5 text-center">
                         <img
-                            src="/assets/about-team-avatar.png"
-                            alt="SpoonSync team"
+                            src="/subera/about-team-avatar.png"
+                            alt="Subera AI team"
                             className="rounded-circle shadow-soft"
-                            style={{width: 150, height: 150, objectFit: "cover", background: "#f5f7f9"}}
+                            style={{ width: 150, height: 150, objectFit: "cover", background: "#f5f7f9" }}
                         />
                     </div>
                 </div>

@@ -6,11 +6,13 @@ const plans = [
         name: "Starter",
         price: "Free",
         period: "",
-        desc: "Best for individuals, pop-ups, and quick pilots.",
+        desc: "Best for pilots and small catalogs getting started with AI recommendations.",
         features: [
-            "5 Dynamic QR menus",
-            "Basic analytics",
-            "Basic AI setup",
+            "Up to 2,000 recommendation calls / mo",
+            "1 placement (e.g., PDP or Cart)",
+            "Similar & basic upsell",
+            "Standard analytics (CTR, AOV)",
+            "Shopify app & JS SDK",
             "Community support"
         ],
         cta: "Start Free",
@@ -18,32 +20,35 @@ const plans = [
         highlight: false
     },
     {
-        name: "Pro",
-        price: "€15",
+        name: "Growth",
+        price: "€49",
         period: "/mo",
-        desc: "For busy venues that need smarter ops.",
+        desc: "For growing merchants that want measurable uplift and control.",
         features: [
-            "50 Dynamic QR menus",
-            "Advanced analytics",
-            "Premium templates",
-            "Remove SpoonSync branding",
+            "Up to 50,000 recommendation calls / mo",
+            "3 placements (PDP, Cart, Checkout)",
+            "Upsell, Cross-sell & Bought-Together",
+            "Complete-the-Package bundles",
+            "A/B testing & uplift reporting",
+            "Allergen & inventory awareness",
             "Email support"
         ],
-        cta: "Start Pro",
+        cta: "Start Growth",
         href: "/signup",
         highlight: true
     },
     {
-        name: "Business",
-        price: "€40",
-        period: "/mo",
-        desc: "For restaurants and growing teams.",
+        name: "Enterprise",
+        price: "Custom",
+        period: "",
+        desc: "For large catalogs and teams that need scale, controls, and SLAs.",
         features: [
-            "Unlimited QR menus",
-            "Team members & roles",
-            "Full analytics",
-            "Custom domain",
-            "Priority support"
+            "Millions of calls & volume pricing",
+            "Unlimited placements & tenants",
+            "Advanced business rules & catalog sync",
+            "Attribution API & data export",
+            "SSO/SAML, role-based access",
+            "Priority support & SLA"
         ],
         cta: "Contact Sales",
         href: "/contact",
@@ -70,9 +75,11 @@ export default function PricingSection() {
             Pricing
           </span>
                     <h1 className="display-4 fw-bold mb-3 text-brand-main">Simple, Transparent Pricing</h1>
-                    <p className="lead mb-0 mx-auto"
-                       style={{maxWidth: 560, color: "rgba(var(--brand-secondary-rgb), .9)"}}>
-                        Start free and scale as you grow. No hidden fees—just smart value for every team.
+                    <p
+                        className="lead mb-0 mx-auto"
+                        style={{maxWidth: 560, color: "rgba(var(--brand-secondary-rgb), .9)"}}
+                    >
+                        Start free and scale as you grow. No hidden fees—just ROI-driven AI for every merchant.
                     </p>
                 </div>
             </section>
@@ -83,9 +90,7 @@ export default function PricingSection() {
                     {plans.map((plan) => (
                         <div key={plan.name} className="col-12 col-md-6 col-lg-4 d-flex">
                             <div
-                                className={`w-100 rounded-4 shadow-soft border-3 p-5 d-flex flex-column ${
-                                    plan.highlight ? "border" : "border"
-                                }`}
+                                className={`w-100 rounded-4 shadow-soft border-3 p-5 d-flex flex-column border`}
                                 style={{
                                     background: "#fff",
                                     borderColor: plan.highlight
@@ -97,18 +102,26 @@ export default function PricingSection() {
                                 }}
                             >
                                 <h2 className="h4 fw-bold mb-2 text-brand-main">{plan.name}</h2>
-                                <div className="mb-2"
-                                     style={{fontSize: "2.2rem", fontWeight: 700, color: "var(--brand-secondary)"}}>
+                                <div
+                                    className="mb-2"
+                                    style={{fontSize: "2.2rem", fontWeight: 700, color: "var(--brand-secondary)"}}
+                                >
                                     {plan.price}
                                     {plan.period && <span className="fs-5 text-muted">{plan.period}</span>}
                                 </div>
-                                <div className="mb-3 text-muted" style={{minHeight: 50}}>{plan.desc}</div>
+                                <div className="mb-3 text-muted" style={{minHeight: 50}}>
+                                    {plan.desc}
+                                </div>
 
                                 <ul className="list-unstyled mb-4">
                                     {plan.features.map((feature, idx) => (
                                         <li key={idx} className="mb-2 d-flex align-items-center">
-                                            <span className="me-2"
-                                                  style={{color: "var(--brand-primary)", fontWeight: 700}}>✓</span>
+                      <span
+                          className="me-2"
+                          style={{color: "var(--brand-primary)", fontWeight: 700}}
+                      >
+                        ✓
+                      </span>
                                             {feature}
                                         </li>
                                     ))}
