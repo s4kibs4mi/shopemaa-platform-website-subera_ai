@@ -6,6 +6,7 @@ import UpsellEngineFeature from "../../components/features/UpsellEngineFeature";
 import CrossSellEngineFeature from "../../components/features/CrossSellEngineFeature";
 import CompletePackageFeature from "../../components/features/CompletePackageFeature";
 import BoughtTogetherFeature from "../../components/features/BoughtTogetherFeature";
+import AnalyticsInsightsFeature from "../../components/features/AnalyticsInsightsFeature";
 
 export async function getStaticProps({params, locale}) {
     return {
@@ -82,6 +83,7 @@ export default function Features({slug}) {
                 <>
                     <QrcnHead title={'Analytics | Subera AI'}/>
                     <Navbar/>
+                    <AnalyticsInsightsFeature/>
                     <Footer/>
                 </>
             )
