@@ -9,21 +9,23 @@ import Footer from "../components/Footer";
 import ImpactSection from "../components/ImpactSection";
 import {FaqSection} from "../components/FaqSection";
 import QrcnHead from "../components/QrcnHead";
+import SuberaLaunchingSoon from "../components/SuberaAILaunchingSoon";
 
 export default function IndexPage() {
     return (
         <>
-            <QrcnHead/>
-            <Navbar/>
-            <Hero/>
-            <Features/>
-            <ImpactSection/>
-            <HowItWorks/>
-            <UseCases/>
-            <Testimonials/>
-            <FaqSection/>
-            <ContactCTA/>
-            <Footer/>
+            {/*<QrcnHead/>*/}
+            {/*<Navbar/>*/}
+            {/*<Hero/>*/}
+            {/*<Features/>*/}
+            {/*<ImpactSection/>*/}
+            {/*<HowItWorks/>*/}
+            {/*<UseCases/>*/}
+            {/*<Testimonials/>*/}
+            {/*<FaqSection/>*/}
+            {/*<ContactCTA/>*/}
+            {/*<Footer/>*/}
+            <SuberaLaunchingSoon/>
         </>
     );
 }
