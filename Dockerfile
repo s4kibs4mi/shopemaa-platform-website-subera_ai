@@ -15,7 +15,7 @@ RUN yarn build
 FROM node:21-alpine AS runner
 
 RUN apk update
-RUN apk add curl, wget
+RUN apk add curl wget
 
 WORKDIR /app
 
