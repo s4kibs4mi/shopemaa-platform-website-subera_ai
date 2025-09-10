@@ -12,7 +12,10 @@ RUN yarn install
 RUN yarn build
 
 # Step 2. Production image, copy all the files and run next
-FROM base AS runner
+FROM node:21-alpine AS runner
+
+RUN apk update
+RUN apk add curl, wget
 
 WORKDIR /app
 
